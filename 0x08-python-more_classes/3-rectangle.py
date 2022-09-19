@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines a rectangle class"""
+"""Defines rectangle class"""
 
 
 class Rectangle:
@@ -40,8 +40,9 @@ class Rectangle:
             return 0
         return (self.__width + self.__height) * 2
 
-    """Returns a printable representation of rectangle"""
     def __str__(self):
+        """Returns a string
+        """
         if self.__width == 0 or self.__height == 0
             return ("")
         rect = []
