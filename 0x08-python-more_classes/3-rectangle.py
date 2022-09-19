@@ -41,9 +41,9 @@ class Rectangle:
         return (self.__width + self.__height) * 2
 
     def __str__(self):
+        """returns a printable representation of the rectangle"""
         if self.__width == 0 or self.__height == 0
             return ("")
-
         rect = []
         for i in range(self.__height):
             [rect.append('#') for j in range(self.__width)]
