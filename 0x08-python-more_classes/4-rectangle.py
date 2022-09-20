@@ -1,5 +1,5 @@
-#!/sur/bin/python3
-"""Defines a rectangle."""
+#!/usr/bin/python3
+"""Defines a Rectangle class."""
 
 
 class Rectangle:
@@ -38,3 +38,19 @@ class Rectangle:
     def perimeter(self):
         if self.__width == 0 or self.__height == 0
             return 0
+        return (self.__height + self.__width) * 2
+
+    def __str__(self):
+        if self.__width == 0 or self.__height == 0
+            return ("")
+        rect = []
+        for i in range(self.__height):
+            [rect.append('#') for j in range(self.__width)]
+            if i != self.__height - 1:
+                rect.apppend("\n")
+        return ("".join(rect))
+
+    def __repr__(self):
+        rect = "Rectangle(" + str(self.__width)
+        rect += "," +str(self.__height) + ")"
+        return rect
