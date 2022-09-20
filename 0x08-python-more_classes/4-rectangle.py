@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-#4-rectangle.py
-"""Defines a Rectangle class."""
+'''module: Defines a Rectangle class...
+'''
 
 
 class Rectangle:
