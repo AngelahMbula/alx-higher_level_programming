@@ -76,3 +76,7 @@ class Rectangle(Base):
         print("\n" * (self.__y), end="")
         for i in range(self.__height):
             print(" " * (self.__x) + "#" * self.__width)
+
+    def __str__(self):
+        """returns str() rep of the Rectangle."""
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height))
