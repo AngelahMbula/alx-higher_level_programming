@@ -5,7 +5,8 @@ import sys
 import MySQLdb
 
 '''
-script that lists all states from database
+script that lists all states
+from database
 '''
 if __name__ == "__main__":
     db = MySQLdb.connect(
